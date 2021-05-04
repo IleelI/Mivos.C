@@ -1,0 +1,108 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/AllOrganisms.h
+Animals/Sheep.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.h
+Animals/Wolf.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Wolf.h
+Animals/Fox.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.h
+Animals/Turtle.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Turtle.h
+Animals/Antelope.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Antelope.h
+Plants/Grass.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Grass.h
+Plants/Dandelion.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Dandelion.h
+Plants/Guarana.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Guarana.h
+Plants/Wolfberry.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Wolfberry.h
+Plants/Pineborscht.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.cpp
+iostream
+-
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+../../consts&enums.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
+../OrganismManager.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+string
+-
+../Organism.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Antelope.h
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.h
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.h
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Turtle.h
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Wolf.h
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.h
+string
+-
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h
+vector
+-
+Organism.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.h
+AllOrganisms.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/AllOrganisms.h
+../consts&enums.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Dandelion.h
+Plants.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Grass.h
+Plants.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Guarana.h
+Plants.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.h
+Plants.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
+string
+-
+../Organism.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Wolfberry.h
+Plants.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
+

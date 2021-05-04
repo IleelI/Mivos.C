@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Mivos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mivos">
+				<Option output="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/Mivos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mivos"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mivos/fast">
+				<Option output="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/Mivos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mivos/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/volcent/Documents/Studia/Projekty/PO/1.\ Etap/Mivos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/AllOrganisms.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Antelope.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Antelope.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Turtle.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Turtle.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Wolf.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Wolf.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Dandelion.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Dandelion.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Grass.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Grass.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Guarana.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Guarana.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Wolfberry.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Wolfberry.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&amp;enums.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/main.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
