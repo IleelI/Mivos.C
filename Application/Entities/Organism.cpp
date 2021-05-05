@@ -12,6 +12,7 @@ Organism::Organism(int pow, int init, int x, int y, OrganismManager *organismMan
   initiative = init;
   manager = organismManager;
 }
+// Move Generation
 int Organism::GetMove() const {
   int moveDirection;
   do moveDirection = GenerateDirection();
@@ -41,38 +42,7 @@ int Organism::GenerateDirection() {
   else
     return RIGHT;
 }
-bool Organism::CheckMapBounds(int moveDirection) const {
-  switch (moveDirection) {
-    case UP:
-      return (yPos - 1 >= 0);
-    case DOWN:
-      return (yPos + 1 < MAP_SIZE);
-    case LEFT:
-      return (xPos - 1 >= 0);
-    case RIGHT:
-      return (xPos + 1 < MAP_SIZE);
-  }
-  return false;
-}
-bool Organism::CheckForCollision(int moveDirection) const {
-  switch (moveDirection) {
-    case UP:
-      return (manager->GetOrganism(xPos,yPos-1));
-    case DOWN:
-      return (manager->GetOrganism(xPos,yPos+1));
-    case LEFT:
-      return (manager->GetOrganism(xPos-1,yPos));
-    case RIGHT:
-      return (manager->GetOrganism(xPos+1,yPos));
-    case STAY:
-      return false;
-  }
-  return false;
-}
-bool Organism::CheckForReproduce() {
-  int chance = rand() % 100 + 1;
-  return chance <= 8;
-}
+// Additional Object Generation
 void Organism::Reproduce() {
   if (CheckForReproduce()) {
     int reproduceDirection = GetFreePosition();
@@ -105,6 +75,42 @@ void Organism::Reproduce() {
     return;
   }
 }
+// Bound Checking, Collision Checkcing, Checking for Reproduce
+bool Organism::CheckMapBounds(int moveDirection) const {
+  switch (moveDirection) {
+    case UP:
+      return (yPos - 1 >= 0);
+    case DOWN:
+      return (yPos + 1 < MAP_SIZE);
+    case LEFT:
+      return (xPos - 1 >= 0);
+    case RIGHT:
+      return (xPos + 1 < MAP_SIZE);
+    case STAY:
+      return true;
+  }
+  return false;
+}
+bool Organism::CheckForCollision(int moveDirection) const {
+  switch (moveDirection) {
+    case UP:
+      return (manager->GetOrganism(xPos,yPos-1));
+    case DOWN:
+      return (manager->GetOrganism(xPos,yPos+1));
+    case LEFT:
+      return (manager->GetOrganism(xPos-1,yPos));
+    case RIGHT:
+      return (manager->GetOrganism(xPos+1,yPos));
+    case STAY:
+      return false;
+  }
+  return false;
+}
+bool Organism::CheckForReproduce() {
+  int chance = rand() % 100 + 1;
+  return chance <= 8;
+}
+// Getters
 int Organism::GetPower() const {
   return this->power;
 }
@@ -136,11 +142,18 @@ int Organism::GetColliderYPos(int moveDirection) const {
   else
     return yPos;
 }
+// Setters
 void Organism::SetDeath(bool state) {
   hasDied = state;
 }
 void Organism::SetPower(int newPower) {
   power = newPower;
+}
+void Organism::SetXPos(int x) {
+  xPos = x;
+}
+void Organism::SetYPos(int y) {
+  yPos = y;
 }
 Organism::~Organism() {
   power = initiative = lifeLength = xPos = yPos = 0;

@@ -9,7 +9,7 @@
 
 class Pineborscht : public Plants {
 protected:
-  void MakeMove() override;
+  void MakeTurn() override;
   void Action() override;
   void CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) override;
 public:

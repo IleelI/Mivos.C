@@ -13,7 +13,7 @@ Grass::Grass(int x, int y, OrganismManager *organismManager)
   symbol = "GR";
   name = "Grass";
 }
-void Grass::MakeMove() {
+void Grass::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Reproduce();
 }
@@ -24,9 +24,7 @@ void Grass::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) {
 void Grass::Action() {}
 void Grass::Collision(Organism *defender, Organism *assulter) {
   std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
-  defender->SetDeath(true);
-  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), assulter);
-  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+  manager->HandleKillCollision(defender,assulter);
 }
 void Grass::Render() {
   std::cout << symbol << " ";

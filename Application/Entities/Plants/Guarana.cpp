@@ -14,7 +14,7 @@ Guarana::Guarana(int x, int y, OrganismManager *organismManager)
   symbol = "GA";
   name = "Guarana";
 }
-void Guarana::MakeMove() {
+void Guarana::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Reproduce();
 }
@@ -26,9 +26,7 @@ void Guarana::Action() {}
 void Guarana::Collision(Organism *defender, Organism *assulter) {
   std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
   assulter->SetPower(assulter->GetPower()+3);
-  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), assulter);
-  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
-  defender->SetDeath(true);
+  manager->HandleKillCollision(defender,assulter);
 }
 void Guarana::Render() {
   std::cout << symbol << " ";

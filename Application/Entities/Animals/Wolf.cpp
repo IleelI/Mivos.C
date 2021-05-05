@@ -13,23 +13,13 @@ Wolf::Wolf(int x, int y, OrganismManager *organismManager)
   symbol = "WL";
   name = "Wolf";
 }
-void Wolf::MakeMove() {
+void Wolf::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Move();
 }
 void Wolf::Action() {}
 void Wolf::Collision(Organism *defender, Organism *assulter) {
-  if (assulter->GetPower() >= defender->GetPower()) {
-    std::cout << assulter->GetTypeToString() << " has killed " << defender->GetTypeToString() << NEWLINE_CONSOLE;
-    manager->SetOrganism(defender->GetXPos(),defender->GetYPos(),assulter);
-    manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
-    defender->SetDeath(true);
-  }
-  else {
-    std::cout << defender->GetTypeToString() << " has killed " << assulter->GetTypeToString() << NEWLINE_CONSOLE;
-    manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
-    assulter->SetDeath(true);
-  }
+  StandardCollision(defender,assulter);
 }
 void Wolf::Render() {
   std::cout << symbol << " ";

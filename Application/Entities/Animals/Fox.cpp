@@ -13,7 +13,18 @@ Fox::Fox(int x, int y, OrganismManager *organismManager)
   symbol = "FX";
   name = "Fox";
 }
-void Fox::MakeMove() {
+void Fox::Move() {
+  std::cout << "\t✔︎ " << this->GetTypeToString() << " moves " << MoveDirectionToString() << NEWLINE_CONSOLE;
+  if (CheckForCollision(moveDirection)) {
+    std::cout << "\t✘ ResolveCollision on the way" << NEWLINE_CONSOLE;
+    int objXPos = GetColliderXPos(moveDirection);
+    int objYPos = GetColliderYPos(moveDirection);
+    ResolveCollision(this, manager->GetOrganism(objXPos, objYPos));
+  }
+  else
+    ChangePosition();
+}
+void Fox::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Action();
   Move();
@@ -71,17 +82,7 @@ void Fox::Action() {
   moveDirection = STAY;
 }
 void Fox::Collision(Organism *defender, Organism *assulter) {
-    if (assulter->GetPower() >= defender->GetPower()) {
-      std::cout << assulter->GetTypeToString() << " has killed " << defender->GetTypeToString() << NEWLINE_CONSOLE;
-      manager->SetOrganism(defender->GetXPos(),defender->GetYPos(),assulter);
-      manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
-      defender->SetDeath(true);
-    }
-    else {
-      std::cout << defender->GetTypeToString() << " has killed " << assulter->GetTypeToString() << NEWLINE_CONSOLE;
-      manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
-      assulter->SetDeath(true);
-    }
+  StandardCollision(defender,assulter);
 }
 void Fox::Render() {
   std::cout << symbol << " ";

@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Mivos.dir/Application/App.cpp.o"
+  "CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o"
   "CMakeFiles/Mivos.dir/Application/Entities/Animals/Animals.cpp.o"
   "CMakeFiles/Mivos.dir/Application/Entities/Animals/Antelope.cpp.o"
   "CMakeFiles/Mivos.dir/Application/Entities/Animals/Fox.cpp.o"
+  "CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o"
   "CMakeFiles/Mivos.dir/Application/Entities/Animals/Sheep.cpp.o"
   "CMakeFiles/Mivos.dir/Application/Entities/Animals/Turtle.cpp.o"
   "CMakeFiles/Mivos.dir/Application/Entities/Animals/Wolf.cpp.o"

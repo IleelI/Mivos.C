@@ -4,9 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/App.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/App.cpp.o"
+  "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Console/Console.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o"
   "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Animals.cpp.o"
   "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Antelope.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Antelope.cpp.o"
   "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Fox.cpp.o"
+  "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o"
   "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Sheep.cpp.o"
   "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Turtle.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Turtle.cpp.o"
   "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Wolf.cpp" "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles/Mivos.dir/Application/Entities/Animals/Wolf.cpp.o"

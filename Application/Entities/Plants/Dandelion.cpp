@@ -13,7 +13,7 @@ Dandelion::Dandelion(int x, int y, OrganismManager *organismManager)
   symbol = "DN";
   name = "Dandelion";
 }
-void Dandelion::MakeMove() {
+void Dandelion::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   this->Reproduce();
 }
@@ -28,10 +28,8 @@ void Dandelion::Reproduce() {
   }
   if (reproduce) {
     int reproduceDirection = GetFreePosition();
-    if (reproduceDirection == STAY) {
+    if (reproduceDirection == STAY)
       std::cout << "\t✘ No place for reproduction!" << NEWLINE_CONSOLE;
-      return;
-    }
     else {
       std::cout << "\t✔︎ Reproduction successful!" << NEWLINE_CONSOLE;
       int newXPos=xPos, newYPos=yPos;
@@ -49,14 +47,11 @@ void Dandelion::Reproduce() {
           newXPos+=1;
           break;
       }
-      Dandelion* dandelion = new Dandelion(newXPos,newYPos,manager);
-      manager->AddOrganism(newXPos,newYPos,dandelion);
+      CreateTypedOrganism(newXPos,newYPos,manager);
     }
   }
-  else {
+  else
     std::cout << "\t✘ Reproduction Failed!" << NEWLINE_CONSOLE;
-    return;
-  }
 }
 void Dandelion::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) {
   auto* dandelion = new Dandelion(xPos,yPos,manager);
@@ -65,9 +60,7 @@ void Dandelion::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager
 void Dandelion::Action() {}
 void Dandelion::Collision(Organism *defender, Organism *assulter) {
   std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
-  defender->SetDeath(true);
-  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), assulter);
-  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+  manager->HandleKillCollision(defender,assulter);
 }
 void Dandelion::Render() {
   std::cout << symbol << " ";

@@ -9,7 +9,8 @@
 class Fox : public Animals {
 protected:
   void Action() override;
-  void MakeMove() override;
+  void Move() override;
+  void MakeTurn() override;
   void CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) override;
 public:
   Fox(int x, int y, OrganismManager* organismManager);
