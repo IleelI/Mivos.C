@@ -9,22 +9,27 @@
 #include "../OrganismManager.h"
 
 Wolf::Wolf(int x, int y, OrganismManager *organismManager)
-:Animals(9,4,x,y,organismManager) {
+    : Animals(9, 4, x, y, organismManager) {
   symbol = "WL";
   name = "Wolf";
 }
+
 void Wolf::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Move();
 }
+
 void Wolf::Action() {}
+
 void Wolf::Collision(Organism *defender, Organism *assulter) {
-  StandardCollision(defender,assulter);
+  StandardCollision(defender, assulter);
 }
+
 void Wolf::Render() {
   std::cout << symbol << " ";
 }
+
 void Wolf::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) {
-  auto* wolf = new Wolf(xPos,yPos,manager);
-  manager->AddOrganism(xPos,yPos,wolf);
+  auto *wolf = new Wolf(xPos, yPos, manager);
+  manager->AddOrganism(xPos, yPos, wolf);
 }

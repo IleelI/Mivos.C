@@ -11,6 +11,7 @@ void Console::StartOfTurn(int turn) {
   std::cout << "----------------------------------" << NEWLINE_CONSOLE;
   std::cout << "Start of new turn. " << " Turn: " << turn << NEWLINE_CONSOLE;
 }
+
 void Console::EndOfTurn() {
   std::cout << "----------------------------------" << NEWLINE_CONSOLE;
   std::cout << "End of turn" << NEWLINE_CONSOLE;

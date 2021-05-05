@@ -9,7 +9,7 @@
 #include "../../consts&enums.h"
 
 Human::Human(int x, int y, OrganismManager *organismManager)
-:Animals(5,4,x,y,organismManager) {
+    : Animals(5, 4, x, y, organismManager) {
   symbol = "⎔";
   name = "Player";
   onCooldown = false;
@@ -44,6 +44,7 @@ void Human::TakePlayerInput() {
     }
   } while (moveDirection == -1);
 }
+
 void Human::MovePlayer() {
   TakePlayerInput();
   while (!CheckMapBounds(moveDirection)) {
@@ -54,11 +55,11 @@ void Human::MovePlayer() {
   if (CheckForCollision(moveDirection)) {
     int objXPos = GetColliderXPos(moveDirection);
     int objYPos = GetColliderYPos(moveDirection);
-    ResolveCollision(this, manager->GetOrganism(objXPos,objYPos));
-  }
-  else
+    ResolveCollision(this, manager->GetOrganism(objXPos, objYPos));
+  } else
     ChangePosition();
 }
+
 void Human::CheckForAction() {
   char command;
   do {
@@ -86,8 +87,9 @@ void Human::CheckForAction() {
         command = 'p';
         break;
     }
-  } while (command != 'M' && command != 'A' );
+  } while (command != 'M' && command != 'A');
 }
+
 void Human::MakeTurn() {
   std::cout << "Player turn!" << NEWLINE_CONSOLE;
   CheckForAction();
@@ -100,21 +102,24 @@ void Human::Action() {
   std::cout << "Every organism in range of player is dead! Time on cooldown: " << SPECIAL_ABILITY_CD << NEWLINE_CONSOLE;
   if (CheckMapBounds(UP))
     if (CheckForCollision(UP))
-      manager->KillOrganism(manager->GetOrganism(xPos,yPos-1));
+      manager->KillOrganism(manager->GetOrganism(xPos, yPos - 1));
   if (CheckMapBounds(DOWN))
     if (CheckForCollision(DOWN))
-      manager->KillOrganism(manager->GetOrganism(xPos,yPos+1));
+      manager->KillOrganism(manager->GetOrganism(xPos, yPos + 1));
   if (CheckMapBounds(LEFT))
     if (CheckForCollision(LEFT))
-      manager->KillOrganism(manager->GetOrganism(xPos-1,yPos));
+      manager->KillOrganism(manager->GetOrganism(xPos - 1, yPos));
   if (CheckMapBounds(RIGHT))
-    if(CheckForCollision(RIGHT))
-      manager->KillOrganism(manager->GetOrganism(xPos+1,yPos));
+    if (CheckForCollision(RIGHT))
+      manager->KillOrganism(manager->GetOrganism(xPos + 1, yPos));
 }
+
 void Human::Collision(Organism *defender, Organism *assulter) {
-  StandardCollision(defender,assulter);
+  StandardCollision(defender, assulter);
 }
-void Human::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) {;}
+
+void Human::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) { ; }
+
 void Human::DecreasCooldown() {
   specialCooldown--;
   if (specialCooldown == 0) {
@@ -122,9 +127,11 @@ void Human::DecreasCooldown() {
     specialCooldown = 0;
   }
 }
+
 bool Human::IsAbilityOnCD() const {
   return onCooldown;
 }
+
 void Human::Render() {
   std::cout << symbol << " ";
 }

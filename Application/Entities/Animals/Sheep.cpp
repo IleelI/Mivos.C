@@ -9,22 +9,27 @@
 #include "../OrganismManager.h"
 
 Sheep::Sheep(int x, int y, OrganismManager *organismManager)
-:Animals(4,4,x,y,organismManager) {
+    : Animals(4, 4, x, y, organismManager) {
   symbol = "SE";
   name = "Sheep";
 }
+
 void Sheep::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Move();
 }
+
 void Sheep::Action() {}
+
 void Sheep::Collision(Organism *defender, Organism *assulter) {
-  StandardCollision(defender,assulter);
+  StandardCollision(defender, assulter);
 }
+
 void Sheep::Render() {
   std::cout << symbol << " ";
 }
+
 void Sheep::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) {
-  auto* sheep = new Sheep(xPos,yPos,manager);
-  manager->AddOrganism(xPos,yPos,sheep);
+  auto *sheep = new Sheep(xPos, yPos, manager);
+  manager->AddOrganism(xPos, yPos, sheep);
 }

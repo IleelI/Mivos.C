@@ -4,6 +4,7 @@
 
 #ifndef MIVOS_ALLORGANISMS_H
 #define MIVOS_ALLORGANISMS_H
+
 #include "Animals/Sheep.h"
 #include "Animals/Wolf.h"
 #include "Animals/Fox.h"

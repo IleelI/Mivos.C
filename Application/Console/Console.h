@@ -9,8 +9,11 @@
 class Console {
 public:
   Console() = default;
+
   static void StartOfTurn(int turn);
+
   static void EndOfTurn();
+
   ~Console() = default;
 };
 
