@@ -2,7 +2,8 @@
 #define MIVOS_CONSTS_ENUMS_H
 #define CLEAR_CONSOLE "\033[2J\033[1;1H"
 #define NEWLINE_CONSOLE "\n\r"
-#define MAP_SIZE 10
+#define MAP_SIZE 20
+#define SPECIAL_ABILITY_CD 5
 enum moveDirections {
   UP = 1,
   DOWN,

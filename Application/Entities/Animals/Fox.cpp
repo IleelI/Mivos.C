@@ -13,7 +13,18 @@ Fox::Fox(int x, int y, OrganismManager *organismManager)
   symbol = "FX";
   name = "Fox";
 }
-void Fox::MakeMove() {
+void Fox::Move() {
+  std::cout << "\t✔︎ " << this->GetTypeToString() << " moves " << MoveDirectionToString() << NEWLINE_CONSOLE;
+  if (CheckForCollision(moveDirection)) {
+    std::cout << "\t✘ ResolveCollision on the way" << NEWLINE_CONSOLE;
+    int objXPos = GetColliderXPos(moveDirection);
+    int objYPos = GetColliderYPos(moveDirection);
+    ResolveCollision(this, manager->GetOrganism(objXPos, objYPos));
+  }
+  else
+    ChangePosition();
+}
+void Fox::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Action();
   Move();
@@ -70,7 +81,9 @@ void Fox::Action() {
   std::cout << "Fox stays in place " << NEWLINE_CONSOLE;
   moveDirection = STAY;
 }
-void Fox::Collision() {}
+void Fox::Collision(Organism *defender, Organism *assulter) {
+  StandardCollision(defender,assulter);
+}
 void Fox::Render() {
   std::cout << symbol << " ";
 }

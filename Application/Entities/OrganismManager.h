@@ -3,31 +3,48 @@
 #include <vector>
 #include "Organism.h"
 #include "AllOrganisms.h"
+#include "Animals/Human.h"
 #include "../consts&enums.h"
 
 class OrganismManager {
 private:
   Organism* organismsMap[MAP_SIZE][MAP_SIZE]{nullptr};
   std::vector<Organism*>organisms;
+  Human* player;
+  int turns;
+  // Random Generation
+  void GenerateOrganism();
   static int GenerateXPos();
   static int GenerateYPos();
   static int GenerateType();
-  int IdxOfOrganism(Organism* organism) const;
+  // Getter
+  int GetOrganismIdx(Organism* organism) const;
+  // Organisms Management
+  void OrganismsTurn();
   void SortOrganisms();
+  void CheckOrganisms();
+  void CheckPlayer();
 public:
   OrganismManager();
-  // Random Generation
-  void GenerateOrganism();
   // Addition
   void AddOrganism(int x, int y, Organism* newOrganism); // Used when reproducing organismsMap
-  // Removal // Used when killing organismsMap
-  void RemoveOrganism(int x, int y);
+  // Removal
+  void KillOrganism(Organism* organism);
+  void HandleKillCollision(Organism* defender, Organism* assulter);
+  // Generation
+  void GenerateSimulation();
   // Setter
-  void SetOrganism(int x, int y, Organism* newOrganism);
+  void SetField(int x, int y, Organism* newOrganism);
+  void SetFieldFree(int x, int y);
+  static void UpdateOrganismPosition(int x, int y, Organism* organism);
   // Getter
   Organism* GetOrganism(int x, int y) const;
-  // Renderer+
+  int GetTurns() const;
+  // Renderer
   void PrintOrganisms() const;
+  // Handling Simulation State
+  void Turn();
+  static void Exit();
   // Turn Action
   void OrganismsAction();
   ~OrganismManager();

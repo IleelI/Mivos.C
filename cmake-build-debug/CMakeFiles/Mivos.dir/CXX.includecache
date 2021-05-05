@@ -28,16 +28,6 @@ Plants/Wolfberry.h
 Plants/Pineborscht.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.h
 
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.cpp
-iostream
--
-Animals.h
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
-../../consts&enums.h
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
-../OrganismManager.h
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h
-
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
 string
 -
@@ -48,7 +38,23 @@ string
 Animals.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
 
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.cpp
+iostream
+-
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+Fox.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.h
+../../consts&enums.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
+../OrganismManager.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.h
+Animals.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.h
 Animals.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
 
@@ -75,6 +81,8 @@ Organism.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Organism.h
 AllOrganisms.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/AllOrganisms.h
+Animals/Human.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.h
 ../consts&enums.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
 

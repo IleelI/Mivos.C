@@ -13,7 +13,7 @@ Wolfberry::Wolfberry(int x, int y, OrganismManager *organismManager)
   symbol = "WB";
   name = "Wolfberry";
 }
-void Wolfberry::MakeMove() {
+void Wolfberry::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Reproduce();
 }
@@ -22,7 +22,13 @@ void Wolfberry::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager
   manager->AddOrganism(xPos,yPos,wolfberry);
 }
 void Wolfberry::Action() {}
-void Wolfberry::Collision() {}
+void Wolfberry::Collision(Organism *defender, Organism *assulter) {
+  std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+  assulter->SetDeath(true);
+  defender->SetDeath(true);
+  manager->SetFieldFree(defender->GetXPos(),defender->GetYPos());
+  manager->SetFieldFree(assulter->GetXPos(),assulter->GetYPos());
+}
 void Wolfberry::Render() {
   std::cout << symbol << " ";
 }

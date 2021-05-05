@@ -142,6 +142,60 @@ Mivos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/build
 .PHONY : Mivos/fast
 
+Application/App.o: Application/App.cpp.o
+
+.PHONY : Application/App.o
+
+# target to build an object file
+Application/App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/App.cpp.o
+.PHONY : Application/App.cpp.o
+
+Application/App.i: Application/App.cpp.i
+
+.PHONY : Application/App.i
+
+# target to preprocess a source file
+Application/App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/App.cpp.i
+.PHONY : Application/App.cpp.i
+
+Application/App.s: Application/App.cpp.s
+
+.PHONY : Application/App.s
+
+# target to generate assembly for a file
+Application/App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/App.cpp.s
+.PHONY : Application/App.cpp.s
+
+Application/Console/Console.o: Application/Console/Console.cpp.o
+
+.PHONY : Application/Console/Console.o
+
+# target to build an object file
+Application/Console/Console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o
+.PHONY : Application/Console/Console.cpp.o
+
+Application/Console/Console.i: Application/Console/Console.cpp.i
+
+.PHONY : Application/Console/Console.i
+
+# target to preprocess a source file
+Application/Console/Console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Console/Console.cpp.i
+.PHONY : Application/Console/Console.cpp.i
+
+Application/Console/Console.s: Application/Console/Console.cpp.s
+
+.PHONY : Application/Console/Console.s
+
+# target to generate assembly for a file
+Application/Console/Console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Console/Console.cpp.s
+.PHONY : Application/Console/Console.cpp.s
+
 Application/Entities/Animals/Animals.o: Application/Entities/Animals/Animals.cpp.o
 
 .PHONY : Application/Entities/Animals/Animals.o
@@ -222,6 +276,33 @@ Application/Entities/Animals/Fox.s: Application/Entities/Animals/Fox.cpp.s
 Application/Entities/Animals/Fox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Entities/Animals/Fox.cpp.s
 .PHONY : Application/Entities/Animals/Fox.cpp.s
+
+Application/Entities/Animals/Human.o: Application/Entities/Animals/Human.cpp.o
+
+.PHONY : Application/Entities/Animals/Human.o
+
+# target to build an object file
+Application/Entities/Animals/Human.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o
+.PHONY : Application/Entities/Animals/Human.cpp.o
+
+Application/Entities/Animals/Human.i: Application/Entities/Animals/Human.cpp.i
+
+.PHONY : Application/Entities/Animals/Human.i
+
+# target to preprocess a source file
+Application/Entities/Animals/Human.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.i
+.PHONY : Application/Entities/Animals/Human.cpp.i
+
+Application/Entities/Animals/Human.s: Application/Entities/Animals/Human.cpp.s
+
+.PHONY : Application/Entities/Animals/Human.s
+
+# target to generate assembly for a file
+Application/Entities/Animals/Human.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mivos.dir/build.make CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.s
+.PHONY : Application/Entities/Animals/Human.cpp.s
 
 Application/Entities/Animals/Sheep.o: Application/Entities/Animals/Sheep.cpp.o
 
@@ -556,6 +637,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Mivos"
+	@echo "... Application/App.o"
+	@echo "... Application/App.i"
+	@echo "... Application/App.s"
+	@echo "... Application/Console/Console.o"
+	@echo "... Application/Console/Console.i"
+	@echo "... Application/Console/Console.s"
 	@echo "... Application/Entities/Animals/Animals.o"
 	@echo "... Application/Entities/Animals/Animals.i"
 	@echo "... Application/Entities/Animals/Animals.s"
@@ -565,6 +652,9 @@ help:
 	@echo "... Application/Entities/Animals/Fox.o"
 	@echo "... Application/Entities/Animals/Fox.i"
 	@echo "... Application/Entities/Animals/Fox.s"
+	@echo "... Application/Entities/Animals/Human.o"
+	@echo "... Application/Entities/Animals/Human.i"
+	@echo "... Application/Entities/Animals/Human.s"
 	@echo "... Application/Entities/Animals/Sheep.o"
 	@echo "... Application/Entities/Animals/Sheep.i"
 	@echo "... Application/Entities/Animals/Sheep.s"

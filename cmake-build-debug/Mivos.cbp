@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/App.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/App.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Console/Console.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Console/Console.h">
+			<Option target="Mivos"/>
+		</Unit>
 		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/AllOrganisms.h">
 			<Option target="Mivos"/>
 		</Unit>
@@ -99,6 +111,12 @@
 			<Option target="Mivos"/>
 		</Unit>
 		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Fox.h">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.cpp">
+			<Option target="Mivos"/>
+		</Unit>
+		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.h">
 			<Option target="Mivos"/>
 		</Unit>
 		<Unit filename="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.cpp">

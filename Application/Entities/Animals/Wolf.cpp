@@ -13,12 +13,14 @@ Wolf::Wolf(int x, int y, OrganismManager *organismManager)
   symbol = "WL";
   name = "Wolf";
 }
-void Wolf::MakeMove() {
+void Wolf::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Move();
 }
 void Wolf::Action() {}
-void Wolf::Collision() {}
+void Wolf::Collision(Organism *defender, Organism *assulter) {
+  StandardCollision(defender,assulter);
+}
 void Wolf::Render() {
   std::cout << symbol << " ";
 }

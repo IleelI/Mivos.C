@@ -8,12 +8,12 @@
 
 class Wolfberry : public Plants {
 protected:
-  void MakeMove() override;
+  void MakeTurn() override;
   void Action() override;
-  void Collision() override;
   void CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) override;
 public:
   Wolfberry(int x, int y, OrganismManager* organismManager);
+  void Collision(Organism *defender, Organism *assulter) override;
   void Render() override;
   ~Wolfberry() override = default;
 };

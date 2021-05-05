@@ -13,12 +13,13 @@ Sheep::Sheep(int x, int y, OrganismManager *organismManager)
   symbol = "SE";
   name = "Sheep";
 }
-void Sheep::MakeMove() {
+void Sheep::MakeTurn() {
   std::cout << name << " turn!" << NEWLINE_CONSOLE;
   Move();
 }
 void Sheep::Action() {}
-void Sheep::Collision() {
+void Sheep::Collision(Organism *defender, Organism *assulter) {
+  StandardCollision(defender,assulter);
 }
 void Sheep::Render() {
   std::cout << symbol << " ";

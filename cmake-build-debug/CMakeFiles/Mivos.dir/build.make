@@ -271,6 +271,45 @@ CMakeFiles/Mivos.dir/Application/Entities/Plants/Pineborscht.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mivos.dir/Application/Entities/Plants/Pineborscht.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.cpp" -o CMakeFiles/Mivos.dir/Application/Entities/Plants/Pineborscht.cpp.s
 
+CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o: CMakeFiles/Mivos.dir/flags.make
+CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o: ../Application/Entities/Animals/Human.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o -c "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.cpp"
+
+CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.cpp" > CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.i
+
+CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Human.cpp" -o CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.s
+
+CMakeFiles/Mivos.dir/Application/App.cpp.o: CMakeFiles/Mivos.dir/flags.make
+CMakeFiles/Mivos.dir/Application/App.cpp.o: ../Application/App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Mivos.dir/Application/App.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mivos.dir/Application/App.cpp.o -c "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/App.cpp"
+
+CMakeFiles/Mivos.dir/Application/App.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mivos.dir/Application/App.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/App.cpp" > CMakeFiles/Mivos.dir/Application/App.cpp.i
+
+CMakeFiles/Mivos.dir/Application/App.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mivos.dir/Application/App.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/App.cpp" -o CMakeFiles/Mivos.dir/Application/App.cpp.s
+
+CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o: CMakeFiles/Mivos.dir/flags.make
+CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o: ../Application/Console/Console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o -c "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Console/Console.cpp"
+
+CMakeFiles/Mivos.dir/Application/Console/Console.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mivos.dir/Application/Console/Console.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Console/Console.cpp" > CMakeFiles/Mivos.dir/Application/Console/Console.cpp.i
+
+CMakeFiles/Mivos.dir/Application/Console/Console.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mivos.dir/Application/Console/Console.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Console/Console.cpp" -o CMakeFiles/Mivos.dir/Application/Console/Console.cpp.s
+
 # Object files for target Mivos
 Mivos_OBJECTS = \
 "CMakeFiles/Mivos.dir/main.cpp.o" \
@@ -287,7 +326,10 @@ Mivos_OBJECTS = \
 "CMakeFiles/Mivos.dir/Application/Entities/Plants/Dandelion.cpp.o" \
 "CMakeFiles/Mivos.dir/Application/Entities/Plants/Guarana.cpp.o" \
 "CMakeFiles/Mivos.dir/Application/Entities/Plants/Wolfberry.cpp.o" \
-"CMakeFiles/Mivos.dir/Application/Entities/Plants/Pineborscht.cpp.o"
+"CMakeFiles/Mivos.dir/Application/Entities/Plants/Pineborscht.cpp.o" \
+"CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o" \
+"CMakeFiles/Mivos.dir/Application/App.cpp.o" \
+"CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o"
 
 # External object files for target Mivos
 Mivos_EXTERNAL_OBJECTS =
@@ -307,11 +349,14 @@ Mivos: CMakeFiles/Mivos.dir/Application/Entities/Plants/Dandelion.cpp.o
 Mivos: CMakeFiles/Mivos.dir/Application/Entities/Plants/Guarana.cpp.o
 Mivos: CMakeFiles/Mivos.dir/Application/Entities/Plants/Wolfberry.cpp.o
 Mivos: CMakeFiles/Mivos.dir/Application/Entities/Plants/Pineborscht.cpp.o
+Mivos: CMakeFiles/Mivos.dir/Application/Entities/Animals/Human.cpp.o
+Mivos: CMakeFiles/Mivos.dir/Application/App.cpp.o
+Mivos: CMakeFiles/Mivos.dir/Application/Console/Console.cpp.o
 Mivos: CMakeFiles/Mivos.dir/build.make
 Mivos: /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libcurses.tbd
 Mivos: /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libform.tbd
 Mivos: CMakeFiles/Mivos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Mivos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Mivos"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mivos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
