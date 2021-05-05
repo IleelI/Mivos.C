@@ -20,8 +20,7 @@ public:
   void GenerateOrganism();
   // Addition
   void AddOrganism(int x, int y, Organism* newOrganism); // Used when reproducing organismsMap
-  // Removal // Used when killing organismsMap
-  void RemoveOrganism(int x, int y);
+  // Removal
   // Setter
   void SetOrganism(int x, int y, Organism* newOrganism);
   // Getter

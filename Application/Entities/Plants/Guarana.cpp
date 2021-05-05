@@ -7,6 +7,7 @@
 #include "Guarana.h"
 #include "../../consts&enums.h"
 #include "../OrganismManager.h"
+#include "../Animals/Animals.h"
 
 Guarana::Guarana(int x, int y, OrganismManager *organismManager)
 :Plants(0,x,y,organismManager) {
@@ -22,7 +23,13 @@ void Guarana::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) 
   manager->AddOrganism(xPos,yPos,guarana);
 }
 void Guarana::Action() {}
-void Guarana::Collision() {}
+void Guarana::Collision(Organism *defender, Organism *assulter) {
+  std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+  assulter->SetPower(assulter->GetPower()+3);
+  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), assulter);
+  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+  defender->SetDeath(true);
+}
 void Guarana::Render() {
   std::cout << symbol << " ";
 }

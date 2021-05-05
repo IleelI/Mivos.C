@@ -29,7 +29,28 @@ void Turtle::Action() {
     moveDirection = GetMove();
   }
 }
-void Turtle::Collision() {}
+void Turtle::Collision(Organism *defender, Organism *assulter) {
+  if (defender == this) {
+    if (assulter->GetPower() < 5)
+      return;
+    else {
+      std::cout << assulter->GetTypeToString() << " has killed " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+      manager->SetOrganism(defender->GetXPos(),defender->GetYPos(),assulter);
+      manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+      defender->SetDeath(true);
+    }
+  }
+  else {
+    if (defender->GetPower() <= assulter->GetPower()) {
+      std::cout << assulter->GetTypeToString() << " has killed " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+      manager->SetOrganism(defender->GetXPos(),defender->GetYPos(),assulter);
+      manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+      defender->SetDeath(true);
+    }
+    else
+      return;
+  }
+}
 void Turtle::Render() {
   std::cout << symbol << " ";
 }

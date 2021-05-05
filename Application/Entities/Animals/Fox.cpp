@@ -70,7 +70,19 @@ void Fox::Action() {
   std::cout << "Fox stays in place " << NEWLINE_CONSOLE;
   moveDirection = STAY;
 }
-void Fox::Collision() {}
+void Fox::Collision(Organism *defender, Organism *assulter) {
+    if (assulter->GetPower() >= defender->GetPower()) {
+      std::cout << assulter->GetTypeToString() << " has killed " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+      manager->SetOrganism(defender->GetXPos(),defender->GetYPos(),assulter);
+      manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+      defender->SetDeath(true);
+    }
+    else {
+      std::cout << defender->GetTypeToString() << " has killed " << assulter->GetTypeToString() << NEWLINE_CONSOLE;
+      manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+      assulter->SetDeath(true);
+    }
+}
 void Fox::Render() {
   std::cout << symbol << " ";
 }

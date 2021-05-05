@@ -10,10 +10,10 @@ class Guarana : public Plants {
 protected:
   void MakeMove() override;
   void Action() override;
-  void Collision() override;
   void CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) override;
 public:
   Guarana(int x, int y, OrganismManager* organismManager);
+  void Collision(Organism *defender, Organism *assulter) override;
   void Render() override;
   ~Guarana() override = default;
 };

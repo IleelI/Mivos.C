@@ -22,7 +22,12 @@ void Grass::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) {
   manager->AddOrganism(xPos,yPos,grass);
 }
 void Grass::Action() {}
-void Grass::Collision() {}
+void Grass::Collision(Organism *defender, Organism *assulter) {
+  std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+  defender->SetDeath(true);
+  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), assulter);
+  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+}
 void Grass::Render() {
   std::cout << symbol << " ";
 }

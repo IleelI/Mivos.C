@@ -43,23 +43,23 @@ void Animals::ChangePosition() {
   manager->SetOrganism(newXPos,newYPos,this);
   this->xPos = newXPos; this->yPos = newYPos;
 }
-void Animals::ResolveCollision(Organism *curr, Organism *target) {
-  if (typeid(curr) == typeid(target))
+void Animals::ResolveCollision(Organism *assulter, Organism *defender) {
+  if (typeid(*assulter) == typeid(*defender)) {
     Reproduce();
-  else if (typeid(target) == typeid(Turtle)) {
+    return;
   }
-  else if (typeid(target) == typeid(Antelope)) {
-  }
-  else if (typeid(target) == typeid(Guarana)) {
-  }
-  else if (typeid(target) == typeid(Wolfberry)) {
-  }
-  else if (typeid(target) == typeid(Pineborscht)) {
-  }
-  else {
-    this->Collision();
-  }
-
+  else if (typeid(*defender) == typeid(Turtle))
+    dynamic_cast<Turtle *>(defender)->Collision(defender, assulter);
+  else if (typeid(*defender) == typeid(Antelope))
+    dynamic_cast<Antelope *>(defender)->Collision(defender, assulter);
+  else if (typeid(*defender) == typeid(Guarana))
+    dynamic_cast<Guarana *>(defender)->Collision(defender, assulter);
+  else if (typeid(*defender) == typeid(Wolfberry))
+    dynamic_cast<Wolfberry *>(defender)->Collision(defender, assulter);
+  else if (typeid(*defender) == typeid(Pineborscht))
+    dynamic_cast<Pineborscht *>(defender)->Collision(defender, assulter);
+  else
+    defender->Collision(defender,assulter);
 }
 std::string Animals::GetTypeToString() {
   return name;

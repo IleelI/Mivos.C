@@ -63,7 +63,12 @@ void Dandelion::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager
   manager->AddOrganism(xPos,yPos,dandelion);
 }
 void Dandelion::Action() {}
-void Dandelion::Collision() {}
+void Dandelion::Collision(Organism *defender, Organism *assulter) {
+  std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+  defender->SetDeath(true);
+  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), assulter);
+  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+}
 void Dandelion::Render() {
   std::cout << symbol << " ";
 }

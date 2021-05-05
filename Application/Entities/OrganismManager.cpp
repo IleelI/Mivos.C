@@ -81,11 +81,6 @@ void OrganismManager::AddOrganism(int x, int y, Organism* newOrganism) {
   organismsMap[y][x] = newOrganism;
   organisms.insert(organisms.end(), newOrganism);
 }
-void OrganismManager::RemoveOrganism(int x, int y) {
-  organisms.erase(organisms.begin()+ IdxOfOrganism(organismsMap[y][x]));
-  delete organismsMap[y][x];
-  organismsMap[y][x] = nullptr;
-}
 Organism* OrganismManager::GetOrganism(int x, int y) const {
   return organismsMap[y][x];
 }
@@ -105,10 +100,23 @@ void OrganismManager::PrintOrganisms() const {
 }
 void OrganismManager::OrganismsAction() {
   SortOrganisms();
-  for (auto& item: organisms)
-    item->MakeMove();
-  for (auto& item: organisms)
-    item->lifeLength++;
+  for (auto& item: organisms) {
+    if (!item->hasDied)
+      item->MakeMove();
+  }
+  auto it = organisms.begin();
+  int idx = 0;
+  while (it != organisms.end()) {
+    if (organisms[idx]->hasDied) {
+      it = organisms.erase(it);
+      idx--;
+    }
+    else {
+      organisms[idx]->lifeLength++;
+      it++;
+    }
+    idx++;
+  }
 }
 OrganismManager::~OrganismManager() {
   for (auto& row: organismsMap)

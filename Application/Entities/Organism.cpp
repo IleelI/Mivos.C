@@ -8,6 +8,7 @@ Organism::Organism(int pow, int init, int x, int y, OrganismManager *organismMan
   yPos = y;
   power = pow;
   lifeLength = 0;
+  hasDied = false;
   initiative = init;
   manager = organismManager;
 }
@@ -113,6 +114,12 @@ int Organism::GetInitiative() const {
 int Organism::GetLifeLength() const {
   return this->lifeLength;
 }
+int Organism::GetXPos() const {
+  return xPos;
+}
+int Organism::GetYPos() const {
+  return yPos;
+}
 int Organism::GetColliderXPos(int moveDirection) const {
   if (moveDirection == LEFT)
     return xPos-1;
@@ -128,6 +135,12 @@ int Organism::GetColliderYPos(int moveDirection) const {
     return yPos+1;
   else
     return yPos;
+}
+void Organism::SetDeath(bool state) {
+  hasDied = state;
+}
+void Organism::SetPower(int newPower) {
+  power = newPower;
 }
 Organism::~Organism() {
   power = initiative = lifeLength = xPos = yPos = 0;

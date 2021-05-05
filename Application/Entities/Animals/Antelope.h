@@ -10,10 +10,10 @@ class Antelope : public Animals {
 protected:
   void Action() override;
   void MakeMove() override;
-  void Collision() override;
   void CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager) override;
 public:
   Antelope(int x, int y, OrganismManager* organismManager);
+  void Collision(Organism *defender, Organism *assulter) override;
   void Render() override;
 };
 

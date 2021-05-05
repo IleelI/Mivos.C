@@ -28,16 +28,6 @@ Plants/Wolfberry.h
 Plants/Pineborscht.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Pineborscht.h
 
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.cpp
-iostream
--
-Animals.h
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
-../../consts&enums.h
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
-../OrganismManager.h
-/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h
-
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Animals.h
 string
 -
@@ -105,4 +95,12 @@ Plants.h
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Plants/Plants.h
 
 /Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/consts&enums.h
+
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/main.cpp
+iostream
+-
+Application/Entities/OrganismManager.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/OrganismManager.h
+Application/Entities/Animals/Sheep.h
+/Users/volcent/Documents/Studia/Projekty/PO/1. Etap/Mivos/Application/Entities/Animals/Sheep.h
 

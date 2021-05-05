@@ -22,7 +22,13 @@ void Wolfberry::CreateTypedOrganism(int xPos, int yPos, OrganismManager *manager
   manager->AddOrganism(xPos,yPos,wolfberry);
 }
 void Wolfberry::Action() {}
-void Wolfberry::Collision() {}
+void Wolfberry::Collision(Organism *defender, Organism *assulter) {
+  std::cout << assulter->GetTypeToString() << " has eaten " << defender->GetTypeToString() << NEWLINE_CONSOLE;
+  assulter->SetDeath(true);
+  defender->SetDeath(true);
+  manager->SetOrganism(assulter->GetXPos(),assulter->GetYPos(), nullptr);
+  manager->SetOrganism(defender->GetXPos(),defender->GetYPos(), nullptr);
+}
 void Wolfberry::Render() {
   std::cout << symbol << " ";
 }

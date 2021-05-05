@@ -11,6 +11,7 @@ protected:
   int lifeLength;
   int xPos;
   int yPos;
+  bool hasDied;
   OrganismManager* manager;
   friend OrganismManager;
   int GetMove() const;
@@ -23,8 +24,6 @@ protected:
   static bool CheckForReproduce();
   virtual void Action() = 0;
   virtual void MakeMove() = 0;
-  virtual void Collision() = 0;
-  virtual std::string GetTypeToString() = 0;
   virtual void CreateTypedOrganism(int xPos, int yPos, OrganismManager* manager) = 0;
   virtual void Reproduce();
 public:
@@ -32,6 +31,12 @@ public:
   int GetPower() const;
   int GetInitiative() const;
   int GetLifeLength() const;
+  int GetXPos() const;
+  int GetYPos() const;
+  void SetDeath(bool state);
+  void SetPower(int newPower);
+  virtual void Collision(Organism *defender, Organism *assulter) = 0;
+  virtual std::string GetTypeToString() = 0;
   virtual void Render() = 0;
   virtual ~Organism();
 };
